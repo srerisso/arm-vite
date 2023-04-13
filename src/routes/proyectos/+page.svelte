@@ -10,17 +10,17 @@
         projects = await response.json();
     })
 
-    console.log(projects);
+    // console.log(projects);
 </script>
 
 <main>
 
 <!-- List of Projects -->
-<h2>Últimos 10 Proyectos</h2>
+<h2>Últimos Proyectos</h2>
 <ul>
     <li>Código * Cliente * Referencia</li>
 	{#each projects as project}
-        <li>{project.Codigo_Alg} - {project.cliente} - {project.Referencia}</li>
+        <li>{project.Codigo_Alg} - {project.cliente_id} - {project.Referencia}</li>
     {/each}
 
 </ul>
